@@ -2,8 +2,14 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	fmt.Println("Golang File uploade")
+	app := gin.Default()
+	if app != nil {
+		fmt.Println("Server start ...OK")
+		app.Run(":8080")
+	}
 }
