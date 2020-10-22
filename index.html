@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <title>File Upload</title>
+</head>
+<body>
+  <div class="container main">
+    <div class="text-content">
+      <p class="flow-text">
+        This is app that file uploade using Golang with Gin.
+      </p>
+    </div>
+    <form action="#">
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>File</span>
+          <input type="file" multiple>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="Upload one or more files">
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer class="page-footer btm">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2020 File Upload Tutorial
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

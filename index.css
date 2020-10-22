@@ -1,0 +1,27 @@
+.main {
+  justify-content: center;
+  margin-top: 17%;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.btm {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-top: 30%;
+  }
+}
+  
+@media (min-width: 992px) {
+  .main {
+    margin-top: 17%;
+  }
+}
