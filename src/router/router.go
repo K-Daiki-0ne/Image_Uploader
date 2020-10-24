@@ -2,11 +2,10 @@ package router
 
 import (
 	"0ne/src/controller"
-
-	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
-// Router : application router
-func Router(app *gin.Engine) {
-	app.POST("/file", controller.Upload)
+func Router() {
+	http.HandleFunc("/upload", controller.Upload)
+	http.ListenAndServe(":8080", nil)
 }
